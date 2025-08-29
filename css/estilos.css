@@ -6,12 +6,23 @@
 }
 
 /* Fuentes generales */
-body {
+ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: white;
   color: #333;
-  min-height:100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+ body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: white;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header y logo */
@@ -53,6 +64,7 @@ nav ul li a.activo {
 /* Sección de contenido principal */
 main {
   padding: 20px;
+  flex: 1;
 }
 
 section {
@@ -69,6 +81,7 @@ section h2 {
 }
 
 /* Testimonios */
+
 .testimonio {
   background-color: #fff;
   padding: 10px;
@@ -86,8 +99,10 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
- 
-  
+
+  flex: 1;
+
+
 }
 
 footer .redes a {
@@ -125,20 +140,21 @@ footer .info a {
 
 .iconologo {
 
-  align-items: left;
+  
   justify-items: left;
 
 }
 
-.producto{
-  size: 50px;
+.productos {
+  
+  flex: 1;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1em;
-  
+
 }
 
 .location-listing {
@@ -154,8 +170,8 @@ footer .info a {
   filter: blur(0px);
   transition: filter 0.3s ease-in;
   transform: scale(0.8);
-  
-  
+
+
 }
 
 .location-title {
@@ -170,9 +186,9 @@ footer .info a {
   left: 0;
   opacity: 0;
   transition: opacity .5s;
-  background: rgba(90,0,10,0.4);
+  background: rgba(90, 0, 10, 0.4);
   color: white;
-  
+
   /* posicion del texto en el medio de la imagen*/
   display: flex;
   align-items: center;
@@ -189,10 +205,11 @@ footer .info a {
 
 
 /* for touch screen devices */
-@media (hover: none) { 
+@media (hover: none) {
   .location-title {
     opacity: 1;
   }
+
   .location-image img {
     filter: blur(2px);
   }
