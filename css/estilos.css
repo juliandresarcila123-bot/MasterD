@@ -1,0 +1,208 @@
+/* Reset de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuentes generales */
+ body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: white;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Header y logo */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Color que se resalta en el menú */
+nav ul li a:hover,
+nav ul li a.activo {
+  color: #ff6600;
+}
+
+/* Sección de contenido principal */
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h1,
+section h2 {
+  color: #333;
+}
+
+.servicio {
+  margin-bottom: 20px;
+}
+
+/* Testimonios */
+
+.testimonio {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  flex: 1;
+
+
+}
+
+footer .redes a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .redes img {
+  width: 30px;
+  height: 30px;
+}
+
+footer .info p {
+  margin-top: 10px;
+}
+
+footer .info a {
+  color: white;
+  text-decoration: none;
+}
+
+#contacto img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+#contacto p {
+  margin: 10px 0;
+}
+
+#contacto h2 {
+  margin-top: 30px;
+}
+
+.iconologo {
+
+  
+  justify-items: left;
+
+}
+
+.productos {
+  
+  flex: 1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1em;
+
+}
+
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(0.8);
+
+
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90, 0, 10, 0.4);
+  color: white;
+
+  /* posicion del texto en el medio de la imagen*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) {
+  .location-title {
+    opacity: 1;
+  }
+
+  .location-image img {
+    filter: blur(2px);
+  }
+}

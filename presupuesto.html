@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto - Mi Empresa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  
+</head>
+
+<body>
+  <header>
+    <div class="iconologo"> <a href="#"><img src="img/peinado.png" alt=""></a>
+    </div>
+    <div class="logo">Barber shop online</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="presupuesto">
+      <h1>Solicita tu presupuesto</h1>
+      
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" pattern="[0-20]{20}" required>
+
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="[0-100]{100}" required>
+
+
+        <!-- Teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+        <br>
+        <br>
+        <!-- Información adicional -->
+        <label for="informacion">Solicita más información:</label>
+        <textarea id="informacion" name="informacion" rows="4" cols="50"></textarea>
+        
+        
+        <!-- Política de privacidad -->
+        <div>
+          <label for="politica">
+            <input type="checkbox" id="politica" name="politica" required>
+            Acepto la <a href="#">Política de privacidad</a>
+          </label>
+        </div>
+
+        <!-- Botón de envío -->
+        <button type="submit">Enviar </button>
+      
+    </section>
+  </main>
+
+  <footer>
+    <div class="redes">
+      <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
+      <a href="https://x.com/X."><img src="img/gorjeo.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram"></a>
+    </div>
+    <div class="info">
+      <p>Dirección de la empresa - Calle abetos 12, azuqueca de henares , españa</p>
+      <p><a href="#">Aviso legal</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
